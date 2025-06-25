@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Você decide o futuro da IA</title>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <main class="container">
+    <h1 class="titulo">Você decide o futuro da IA 🤖</h1>
+    <section class="cartao pergunta">
+      <p class="texto-pergunta"></p>
+    </section>
+    <section class="cartao alternativas"></section>
+    <section class="cartao resultado">
+      <h2>Em 2049...</h2>
+      <p class="texto-resultado"></p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#39d0ff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5, random: false },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: "#39d0ff", opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 4, direction: "none", out_mode: "out" }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "grab" },
+          onclick: { enable: false }
+        },
+        modes: {
+          grab: { distance: 140, line_linked: { opacity: 0.8 } }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
